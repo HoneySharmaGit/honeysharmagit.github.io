@@ -1,0 +1,60 @@
+* HOME
+home__social
+https://www.linkedin.com/in/honey-sharma-928446225/
+https://www.instagram.com/https.hunny/
+https://github.com/HoneySharmaGit
+
+home__description
+Dadicated, Keen to learn, and Passionate about coding.
+
+
+* ABOUT
+about__description
+Seeking position to utilize my skills and abilities in the information technology industry that offer professional growth while being resourceful, innovative and flexible.
+
+about__info-name
+Years <br> experience
+Completed <br> project
+Technologies <br> learned
+
+
+* SERVICES
+services__modal-service
+1. front-end development
+I develop the User Interface.
+Building responsive and mobile-friendly websites.
+Creating and implementing interactive features such as forms, and modal windows.
+Creating and maintain web design standard and guideline.
+
+2. back-end development
+Writing server-side code using language such as Java.
+Implementing and maintaining server-side logic and business rules.
+Ensuring the security and scalability of the website or application.
+Creating and implementing APIs to enable communication between the front-end and back-end.
+
+3. Database development
+Writing and optimizing SQL queries for data retrieval and manipulation.
+Designing and creating relational databases using technologies such as MySQL.
+Ensuring the performance and scalability of the database.
+Creating and maintaining documentation for the database.
+
+
+* PORTFOLIO
+portfolio__description
+Website adaptable to all devices, with ui components and animated interactions.
+Full Stack Web Application, with Registration, Login, Add Money and Withdraw Money features.
+Web Application using which client can be able to get the top 10 moviesfrom the Database based upon play-time.
+
+
+* PROJECT
+project__description
+Contact me now and get a 30% discount on your new project.
+
+
+* FOOTER
+footer__social
+https://www.facebook.com/hunny.sharma.277127
+https://www.instagram.com/https.hunny/
+https://www.instagram.com/https.hunny/
+
+
