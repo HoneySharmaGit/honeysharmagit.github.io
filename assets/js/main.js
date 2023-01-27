@@ -112,8 +112,8 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".portfolio__container", {
+/*==================== PROJECT SWIPER  ====================*/
+let swiperProject = new Swiper(".project__container", {
   cssMode: true,
   loop: true,
 
