@@ -13,7 +13,7 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css"> 
 
-        <title>Responsive Portfolio Website</title>
+        <title>Honey Sharma | Java Backend Developer</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -36,6 +36,11 @@
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Experience
                             </a>
                         </li>
                         <li class="nav__item">
@@ -89,28 +94,38 @@
                             </a>
                         </div>
                         <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-
-                                    <image class="home__blob-img" x='12' y='18' href="assets/img/perfil.png"/>
-                                </g>
-                            </svg>
+                            <div class="home__code-card">
+                                <div class="home__code-header">
+                                    <span class="home__code-dot home__code-dot--red"></span>
+                                    <span class="home__code-dot home__code-dot--yellow"></span>
+                                    <span class="home__code-dot home__code-dot--green"></span>
+                                    <span class="home__code-filename">Developer.java</span>
+                                </div>
+                                <div class="home__code-body">
+                                    <p><span class="code-line-num">1</span><span class="code-annotation">@SpringBootApplication</span></p>
+                                    <p><span class="code-line-num">2</span><span class="code-keyword">public class</span> <span class="code-class">Developer</span> {</p>
+                                    <p><span class="code-line-num">3</span></p>
+                                    <p><span class="code-line-num">4</span>&nbsp;&nbsp;<span class="code-keyword">String</span> <span class="code-variable">name</span> = <span class="code-string">"Honey Sharma"</span>;</p>
+                                    <p><span class="code-line-num">5</span>&nbsp;&nbsp;<span class="code-keyword">String</span> <span class="code-variable">role</span> = <span class="code-string">"Java Dev"</span>;</p>
+                                    <p><span class="code-line-num">6</span>&nbsp;&nbsp;<span class="code-keyword">int</span>    <span class="code-variable">experience</span> = <span class="code-number">3</span>;</p>
+                                    <p><span class="code-line-num">7</span>&nbsp;&nbsp;<span class="code-keyword">String</span> <span class="code-variable">location</span>  = <span class="code-string">"Gurugram"</span>;</p>
+                                    <p><span class="code-line-num">8</span></p>
+                                    <p><span class="code-line-num">9</span>&nbsp;&nbsp;<span class="code-comment">// Tech Stack</span></p>
+                                    <p><span class="code-line-num">10</span>&nbsp;&nbsp;<span class="code-keyword">List</span>&lt;<span class="code-class">String</span>&gt; <span class="code-variable">stack</span> = <span class="code-keyword">List.of</span>(</p>
+                                    <p><span class="code-line-num">11</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Java"</span>, <span class="code-string">"Spring Boot"</span>,</p>
+                                    <p><span class="code-line-num">12</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Microservices"</span>, <span class="code-string">"Redis"</span></p>
+                                    <p><span class="code-line-num">13</span>&nbsp;&nbsp;);</p>
+                                    <p><span class="code-line-num">14</span>}</p>
+                                </div>
+                                <div class="home__code-cursor"></div>
+                            </div>
                         </div>
 
                         <div class="home__data">
+                            <span class="home__open-badge"><i class="uil uil-check-circle"></i> Open to New Opportunities</span>
                             <h1 class="home__title">Hey, I'm Honey Sharma!</h1>
-                            <h3 class="home__subtitle">Java Full Stack developer [Fresher]</h3>
-                            <p class="home__description">Dedicated, Keen to learn, and Passionate about coding.</p>
+                            <h3 class="home__subtitle">Java Backend Developer</h3>
+                            <p class="home__description">3+ years crafting high-performance fintech systems — Java · Spring Boot · Microservices · Redis</p>
                                 <a href="#contact" class="button button-flex">
                                     Contact Me <i class="uil uil-message button__icon"></i>
                                 </a>
@@ -132,29 +147,64 @@
                 <span class="section__subtitle">My introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
-
-                    <div class="about__data">
-                        <p class="about__description">[Fresher]<br>Seeking position to utilize my skills and abilities 
-                            in the information technology industry that offer professional 
-                            growth while being resourceful, innovative and flexible.</p>
-
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">01</span>
-                                <span class="about__info-name">Years <br> experience</span>
+                    <div class="about__visual">
+                        <div class="about__java-card">
+                            <div class="about__java-top">
+                                <span class="about__java-badge">Java Developer</span>
                             </div>
-
-                            <div>
-                                <span class="about__info-title">10+</span>
-                                <span class="about__info-name">Completed <br> project</span>
+                            <div class="about__java-stats">
+                                <div class="about__java-stat">
+                                    <i class="uil uil-java-script about__java-icon"></i>
+                                    <span class="about__java-stat-num">3+</span>
+                                    <span class="about__java-stat-label">Years Exp.</span>
+                                </div>
+                                <div class="about__java-stat">
+                                    <i class="uil uil-layers-alt about__java-icon"></i>
+                                    <span class="about__java-stat-num">4+</span>
+                                    <span class="about__java-stat-label">Products</span>
+                                </div>
+                                <div class="about__java-stat">
+                                    <i class="uil uil-circuit about__java-icon"></i>
+                                    <span class="about__java-stat-num">15+</span>
+                                    <span class="about__java-stat-label">Technologies</span>
+                                </div>
                             </div>
-
-                            <div>
-                                <span class="about__info-title">10+</span>
-                                <span class="about__info-name">Technologies <br> learned</span>
+                            <div class="about__java-tags">
+                                <span class="about__java-tag">Java 17</span>
+                                <span class="about__java-tag">Spring Boot</span>
+                                <span class="about__java-tag">Microservices</span>
+                                <span class="about__java-tag">Redis</span>
+                                <span class="about__java-tag">MySQL</span>
+                            </div>
+                            <div class="about__java-footer">
+                                <i class="uil uil-map-marker"></i> Gurugram, India &nbsp;·&nbsp; <i class="uil uil-briefcase-alt"></i> Indiabulls Securities
                             </div>
                         </div>
+                    </div>
+
+                    <div class="about__data">
+                        <p class="about__description">Passionate Java Backend Developer with <strong>3+ years of professional experience</strong> designing and delivering high-performance, scalable backend systems in the <strong>fintech domain</strong>. Currently at <strong>Indiabulls Securities (formerly Dhani Stocks Ltd.)</strong>, contributing to mission-critical mutual fund trading platforms serving thousands of daily users.</p>
+
+                        <p class="about__description" style="margin-top:.75rem">I specialise in building robust RESTful &amp; Microservices architectures, optimising SQL performance, and implementing distributed caching with Redis. I enforce high code quality through unit testing, static analysis, and peer reviews — consistently delivering on time in Agile/Scrum environments.</p>
+
+                        <ul class="about__highlight-list">
+                            <li class="about__highlight-item">
+                                <i class="uil uil-check-circle"></i>
+                                <span>Improved transaction processing speed by <strong>30%</strong> via 3rd-party API integration &amp; advanced multithreading at Indiabulls.</span>
+                            </li>
+                            <li class="about__highlight-item">
+                                <i class="uil uil-check-circle"></i>
+                                <span>Boosted application efficiency by <strong>35%</strong> through algorithm optimisation and SQL query tuning.</span>
+                            </li>
+                            <li class="about__highlight-item">
+                                <i class="uil uil-check-circle"></i>
+                                <span>Achieved <strong>99.9% system availability</strong> by proactively resolving critical production defects.</span>
+                            </li>
+                            <li class="about__highlight-item">
+                                <i class="uil uil-check-circle"></i>
+                                <span>Led end-to-end delivery of <strong>4+ enterprise products</strong> — from architecture design to production deployment.</span>
+                            </li>
+                        </ul>
 
                         <div class="about__buttons">
                             <a download="" href="assets/pdf/HONEY SHARMA RESUME.pdf" class="button button--flex">
@@ -175,10 +225,10 @@
                         <!--==================== Skill 1 ====================-->
                         <div class="skills__content skills__open">
                             <div class="skills__header">
-                                <i class="uil uil-arrow skills__icon"></i>
+                                <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
-                                    <h1 class="skills__title">Frontend</h1>
-                                    <span class="skills__subtitle">Beginner</span>
+                                    <h1 class="skills__title">Backend Core</h1>
+                                    <span class="skills__subtitle">Experienced</span>
                                 </div>
 
                                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -187,41 +237,41 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
+                                        <h3 class="skills__name">Java 8/17</h3>
+                                        <span class="skills__number">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__java"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Spring Boot</h3>
                                         <span class="skills__number">90%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
+                                        <span class="skills__percentage skills__spring__boot"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">CSS</h3>
+                                        <h3 class="skills__name">Microservices</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__microservices"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Hibernate/JPA</h3>
                                         <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__bootstrap"></span>
+                                        <span class="skills__percentage skills__hibernate"></span>
                                     </div>
                                 </div>
                             </div>
@@ -232,10 +282,10 @@
                         <!--==================== skill 2 ====================-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <i class="uil uil-server-network skills__icon"></i>
                                 <div>
-                                    <h1 class="skills__title">Backend</h1>
-                                    <span class="skills__subtitle">Beginner</span>
+                                    <h1 class="skills__title">Frameworks & APIs</h1>
+                                    <span class="skills__subtitle">Experienced</span>
                                 </div>
 
                                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -244,41 +294,41 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Core Java</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__core__java"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Advance Java</h3>
-                                        <span class="skills__number">55%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__advance__java"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JDBC</h3>
+                                        <h3 class="skills__name">Spring Security</h3>
                                         <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__jdbc"></span>
+                                        <span class="skills__percentage skills__spring__security"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Servlet</h3>
+                                        <h3 class="skills__name">RESTful APIs</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__rest__api"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Multithreading</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__multithreading"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Redis / Kafka</h3>
                                         <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__servlet"></span>
+                                        <span class="skills__percentage skills__redis__kafka"></span>
                                     </div>
                                 </div>
                             </div>
@@ -291,8 +341,8 @@
                             <div class="skills__header">
                                 <i class="uil uil-database skills__icon"></i>
                                 <div>
-                                    <h1 class="skills__title">Database</h1>
-                                    <span class="skills__subtitle">Beginner</span>
+                                    <h1 class="skills__title">Databases</h1>
+                                    <span class="skills__subtitle">Experienced</span>
                                 </div>
 
                                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -301,41 +351,184 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">SQL</h3>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__mysql__db"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PostgreSQL</h3>
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__sql"></span>
+                                        <span class="skills__percentage skills__postgresql"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">MySQL</h3>
+                                        <h3 class="skills__name">MongoDB</h3>
                                         <span class="skills__number">65%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__mysql"></span>
+                                        <span class="skills__percentage skills__mongodb"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">SQLyog</h3>
-                                        <span class="skills__number">55%</span>
+                                        <h3 class="skills__name">Redis Cache</h3>
+                                        <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__sqlyog"></span>
+                                        <span class="skills__percentage skills__redis__db"></span>
                                     </div>
                                 </div>
                             </div>
                         </div> 
                     </div>
+
+                    <div>
+                        <!--==================== skill 4 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-setting skills__icon"></i>
+                                <div>
+                                    <h1 class="skills__title">Tools & Platforms</h1>
+                                    <span class="skills__subtitle">Experienced</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git / GitHub</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Jenkins / CI-CD</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__jenkins"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Apache Kafka</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__kafka"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">ELK Stack</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__elk"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Docker</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__docker"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">AWS S3</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__aws"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+            <!--==================== TECH STACK ====================-->
+            <section class="techstack section" id="techstack">
+                <h2 class="section__title">Tech Stack</h2>
+                <span class="section__subtitle">Technologies I work with daily</span>
+
+                <div class="techstack__container container">
+                    <div class="techstack__group">
+                        <h3 class="techstack__category">Languages</h3>
+                        <div class="techstack__tags">
+                            <span class="techstack__tag">Java 8</span>
+                            <span class="techstack__tag">Java 17</span>
+                            <span class="techstack__tag">SQL</span>
+                            <span class="techstack__tag">Shell Script</span>
+                            <span class="techstack__tag">NodeJS</span>
+                        </div>
+                    </div>
+
+                    <div class="techstack__group">
+                        <h3 class="techstack__category">Frameworks</h3>
+                        <div class="techstack__tags">
+                            <span class="techstack__tag">Spring Boot</span>
+                            <span class="techstack__tag">Spring MVC</span>
+                            <span class="techstack__tag">Spring Security</span>
+                            <span class="techstack__tag">Spring Data JPA</span>
+                            <span class="techstack__tag">Hibernate</span>
+                            <span class="techstack__tag">Microservices</span>
+                        </div>
+                    </div>
+
+                    <div class="techstack__group">
+                        <h3 class="techstack__category">Databases</h3>
+                        <div class="techstack__tags">
+                            <span class="techstack__tag">MySQL</span>
+                            <span class="techstack__tag">PostgreSQL</span>
+                            <span class="techstack__tag">MongoDB</span>
+                            <span class="techstack__tag">Redis</span>
+                        </div>
+                    </div>
+
+                    <div class="techstack__group">
+                        <h3 class="techstack__category">Tools &amp; Platforms</h3>
+                        <div class="techstack__tags">
+                            <span class="techstack__tag">Git</span>
+                            <span class="techstack__tag">Jenkins</span>
+                            <span class="techstack__tag">Kafka</span>
+                            <span class="techstack__tag">ELK Stack</span>
+                            <span class="techstack__tag">Docker</span>
+                            <span class="techstack__tag">AWS S3</span>
+                            <span class="techstack__tag">Postman</span>
+                            <span class="techstack__tag">JIRA</span>
+                            <span class="techstack__tag">IntelliJ IDEA</span>
+                            <span class="techstack__tag">MySQL Workbench</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="qualification section" id="qualification">
                 <h2 class="section__title">My Personal Journey</h2>
                 <span class="section__subtitle">Qualification and Experience</span>
             
@@ -359,11 +552,11 @@
                             <!--==================== Qualification 1 ====================-->
                             <div class="qualification__data">
                                 <div>
-                                    <h3 class="qualification__title">Java Full Stack Course</h3>
-                                    <span class="qualification__subtitle">Pentagon Space Institute, Bangalore</span>
+                                    <h3 class="qualification__title">Java Fullstack Development</h3>
+                                    <span class="qualification__subtitle">Pentagon Space Inst. Pvt Ltd, Bengaluru</span>
                                     <div class="qualification__calender">
                                         <i class="uil uil-calendar-alt"></i>&nbsp
-                                        2022-current
+                                        Nov 2021 – Jan 2023
                                     </div>
                                 </div>
             
@@ -383,10 +576,10 @@
             
                                 <div>
                                     <h3 class="qualification__title">Bachelor of Computer Application</h3>
-                                    <span class="qualification__subtitle">Forte Institute of Technology, Meerut</span>
+                                    <span class="qualification__subtitle">Chaudhary Charan Singh University, Meerut</span>
                                     <div class="qualification__calender">
                                         <i class="uil uil-calendar-alt"></i>&nbsp
-                                        2018-2021
+                                        Aug 2018 – Jun 2021
                                     </div>
                                 </div>
                             </div>
@@ -431,37 +624,37 @@
                         <div class="qualification__content" data-content id="job">
                             <!--==================== work 1 ====================-->
                             <div class="qualification__data">
-                                <div></div>
+                                <div>
+                                    <h3 class="qualification__title">Java Developer</h3>
+                                    <span class="qualification__subtitle">Indiabulls Securities, Gurugram</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>&nbsp
+                                        Feb 2024 – Current
+                                    </div>
+                                </div>
 
                                 <div>
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
                                 </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Guest Experience Manager</h3>
-                                    <span class="qualification__subtitle">Cogent E Services, Meerut</span>
-                                    <div class="qualification__calender">
-                                        <i class="uil uil-calendar-alt"></i>&nbsp
-                                        2022-2022
-                                    </div>
-                                </div>
-
                             </div>
 
                             <!--==================== work 2 ====================-->
                             <div class="qualification__data">
-
-                                <div>
-                                    <h3 class="qualification__title">Open to Work...</h3>
-                                    <span class="qualification__subtitle">[looking for an entry level position in IT company]</span>
-                                </div>
+                                <div></div>
 
                                 <div>
                                     <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
                                 </div>
 
+                                <div>
+                                    <h3 class="qualification__title">Java Backend Developer</h3>
+                                    <span class="qualification__subtitle">UniqPay Payment Service, Noida</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>&nbsp
+                                        March 2023 – Feb 2024
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -470,17 +663,49 @@
                 </div>
             </section>
 
+            <!--==================== ACHIEVEMENTS ====================-->
+            <section class="achievement section" id="achievement">
+                <h2 class="section__title">Achievements</h2>
+                <span class="section__subtitle">Key milestones &amp; impact delivered</span>
+
+                <div class="achievement__container container">
+                    <div class="achievement__card">
+                        <i class="uil uil-rocket achievement__icon"></i>
+                        <h3 class="achievement__title">30% Faster Transactions</h3>
+                        <p class="achievement__description">Improved transaction processing speed by 30% at Indiabulls Securities through seamless 3rd-party API integration (Fintech Primitive, Value Research) and advanced multithreading techniques.</p>
+                    </div>
+
+                    <div class="achievement__card">
+                        <i class="uil uil-chart-line achievement__icon"></i>
+                        <h3 class="achievement__title">35% Efficiency Boost</h3>
+                        <p class="achievement__description">Boosted overall application efficiency by 35% by optimising core algorithms, implementing effective multithreading, and tuning SQL queries for high-frequency financial operations.</p>
+                    </div>
+
+                    <div class="achievement__card">
+                        <i class="uil uil-shield-check achievement__icon"></i>
+                        <h3 class="achievement__title">99.9% System Availability</h3>
+                        <p class="achievement__description">Resolved critical production defects proactively across both Indiabulls and UniqPay, achieving 99.9% system uptime and significantly improving platform reliability for end-users.</p>
+                    </div>
+
+                    <div class="achievement__card">
+                        <i class="uil uil-package achievement__icon"></i>
+                        <h3 class="achievement__title">End-to-End Delivery</h3>
+                        <p class="achievement__description">Independently handled end-to-end development of 4+ enterprise products — from system design and code architecture to production deployment, bug resolution, and technical documentation.</p>
+                    </div>
+                </div>
+            </section>
+
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
                 <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">what i offer</span>
+                <span class="section__subtitle">What I offer</span>
 
                 <div class="services__container container grid">
                 <!--==================== SERVICE 1 ====================-->
                     <div class="services__content">
                         <div>
-                            <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Front-end <br> Development</h3>
+                            <i class="uil uil-brackets-curly services__icon"></i>
+                            <h3 class="services__title">Microservices <br> Architecture</h3>
                         </div>
 
                         <span class="button button--flex button--small button--link services__button">
@@ -490,25 +715,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Front-end <br> Development</h4>
+                                <h4 class="services__modal-title">Microservices <br> Architecture</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop the User Interface.</p>
+                                        <p>Design and implement scalable microservices using Spring Boot &amp; Spring Cloud.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Building responsive and mobile-friendly websites.</p>
+                                        <p>Set up service discovery, API gateways, and inter-service communication.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creating and implementing interactive features such as forms, and modal windows.</p>
+                                        <p>Implement distributed tracing, logging (ELK), and circuit breakers.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creating and maintain web design standard and guideline.</p>
+                                        <p>Build event-driven architectures using Apache Kafka for async processing.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -517,8 +742,8 @@
                 <!--==================== SERVICE 2 ====================-->
                     <div class="services__content">
                         <div>
-                            <i class="uil uil-brackets-curly services__icon"></i>
-                            <h3 class="services__title">Back-end <br> Development</h3>
+                            <i class="uil uil-server-network services__icon"></i>
+                            <h3 class="services__title">REST API <br> Development</h3>
                         </div>
 
                         <span class="button button--flex button--small button--link services__button">
@@ -528,25 +753,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Back-end <br> Development</h4>
+                                <h4 class="services__modal-title">REST API <br> Development</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Writing server-side code using language such as Java.</p>
+                                        <p>Design and build secure, well-documented RESTful APIs using Spring Boot.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Implementing and maintaining server-side logic and business rules.</p>
+                                        <p>Implement OAuth2, JWT, and Spring Security for robust API authentication.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Ensuring the security and scalability of the website or application.</p>
+                                        <p>Integrate third-party fintech APIs (payment gateways, data providers).</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creating and implementing APIs to enable communication between the front-end and back-end.</p>
+                                        <p>Write unit &amp; integration tests ensuring high code coverage with JUnit &amp; Mockito.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -556,7 +781,7 @@
                     <div class="services__content">
                         <div>
                             <i class="uil uil-database services__icon"></i>
-                            <h3 class="services__title">Database <br> Development</h3>
+                            <h3 class="services__title">Database <br> Optimisation</h3>
                         </div>
 
                         <span class="button button--flex button--small button--link services__button">
@@ -566,25 +791,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Database <br> Development</h4>
+                                <h4 class="services__modal-title">Database <br> Optimisation</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Writing and optimizing SQL queries for data retrieval and manipulation.</p>
+                                        <p>Design and optimise schemas for MySQL, PostgreSQL, and MongoDB at scale.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Designing and creating relational databases using technologies such as MySQL.</p>
+                                        <p>Write and tune complex SQL queries, indexes, and stored procedures.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Ensuring the performance and scalability of the database.</p>
+                                        <p>Implement distributed caching strategies with Redis to reduce DB load.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Creating and maintaining documentation for the database.</p>
+                                        <p>Manage ORM mappings and transaction handling via Hibernate &amp; Spring Data JPA.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -602,14 +827,13 @@
                     <div class="swiper-wrapper">
                     <!--==================== PROJECT 1 ====================-->
                         <div class="project__content grid swiper-slide">
-                            <img src="assets/img/project1.jpg" alt="" class="project__img">
+                            <img src="assets/img/project1.png" alt="" class="project__img">
 
                             <div class="project__data">
-                                <h3 class="project__title">Modern Website</h3>
-                                <p class="project__description">Website adaptable to all devices, with Ui components 
-                                    and animated interactions.</p>
-                                <a href="#" class="button button--flex button--small project__button">
-                                    Demo
+                                <h3 class="project__title">Indiabulls Mutual Fund</h3>
+                                <p class="project__description">Integrated 3rd-party APIs (Fintech Primitive, Value Research) for MF investment &amp; redemption. Implemented Redis caching and multithreading for 30% faster transactions.</p>
+                                <a href="https://github.com/HoneySharmaGit" target="_blank" class="button button--flex button--small project__button">
+                                    GitHub
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
@@ -620,11 +844,10 @@
                             <img src="assets/img/project2.png" alt="" class="project__img">
 
                             <div class="project__data">
-                                <h3 class="project__title">Bank Application</h3>
-                                <p class="project__description">Full Stack Web Application, with Registration, Login, Add Money 
-                                    and Withdraw Money features.</p>
-                                <a href="#" class="button button--flex button--small project__button">
-                                    Demo
+                                <h3 class="project__title">BenakPay Payment Gateway</h3>
+                                <p class="project__description">Engineered a secure B2B payment gateway backend with JWT authentication, API header validation, and optimized DB queries for high-volume transactions.</p>
+                                <a href="https://github.com/HoneySharmaGit" target="_blank" class="button button--flex button--small project__button">
+                                    GitHub
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
@@ -635,11 +858,10 @@
                             <img src="assets/img/project3.jpg" alt="" class="project__img">
 
                             <div class="project__data">
-                                <h3 class="project__title">Movie Application</h3>
-                                <p class="project__description">Web Application using which client can be able to get the top 10 movies
-                                    from the Database based upon play-time.</p>
-                                <a href="#" class="button button--flex button--small project__button">
-                                    Demo
+                                <h3 class="project__title">Banking Web Application</h3>
+                                <p class="project__description">Full-stack banking app with user registration, login, fund transfer and account management — built with Java, Spring Boot, and MySQL.</p>
+                                <a href="https://github.com/HoneySharmaGit" target="_blank" class="button button--flex button--small project__button">
+                                    GitHub
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
@@ -664,8 +886,8 @@
                 <div class="position__bg">
                     <div class="position__container container grid">
                         <div class="position__data">
-                            <h2 class="position__title">I am Open to Work!</h2>
-                            <p class="position__description">Let me know if you have any Software Development related opportunity/opening for me.</p>
+                            <h2 class="position__title">Open to New Opportunities!</h2>
+                            <p class="position__description">Experienced Java Backend Developer open to exciting roles in fintech, backend systems &amp; distributed architecture. Let's connect!</p>
                             <a href="#contact" class="button button--flex button--white">
                                 Contact Me
                                 <i class="uil uil-message  position__icon button__icon"></i>
@@ -846,39 +1068,43 @@
 
                             <div>
                                 <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">New Delhi, India</span>
+                                <span class="contact__subtitle">Gurugram, Haryana</span>
                             </div>
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
+                        <input type="hidden" name="access_key" value="e8e3a2b0-bb5c-4658-892c-38444f1e0c78">
+                        <input type="hidden" name="subject" value="New message from Portfolio — Honey Sharma">
+                        <input type="checkbox" name="botcheck" style="display:none">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
-                                <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <label for="contact-name" class="contact__label">Name</label>
+                                <input type="text" id="contact-name" name="name" required class="contact__input">
                             </div>
 
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="contact-email" class="contact__label">Email</label>
+                                <input type="email" id="contact-email" name="email" required class="contact__input">
                             </div>
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">Job Designation</label>
-                            <input type="text" class="contact__input">
+                            <label for="contact-designation" class="contact__label">Job Designation</label>
+                            <input type="text" id="contact-designation" name="designation" class="contact__input">
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <label for="contact-message" class="contact__label">Message</label>
+                            <textarea id="contact-message" name="message" required cols="0" rows="7" class="contact__input"></textarea>
                         </div>
 
-                        <div>
-                            <a href="" class="button button--flex">
+                        <div class="contact__form-footer">
+                            <button type="submit" id="contact-submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
+                            <p id="contact-status" class="contact__status" aria-live="polite"></p>
                         </div>
                     </form>
                 </div>
@@ -891,7 +1117,7 @@
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Honey</h1>
-                    <span class="footer__subtitle">Full Stack developer</span>
+                    <span class="footer__subtitle">Java Backend Developer</span>
                 </div>
 
                 <ul class="footer__links">
@@ -923,7 +1149,7 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&copy; HoneySharma-2023 All right reserved.</p>
+            <p class="footer__copy">&copy; HoneySharma-2026 All right reserved.</p>
          </div>
         </footer>
         
