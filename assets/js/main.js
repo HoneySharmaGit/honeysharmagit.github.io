@@ -223,3 +223,56 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== CONTACT FORM ====================*/
+// Uses Web3Forms (https://web3forms.com) — free, 250 submissions/month, no backend needed.
+// Steps: 1) Go to web3forms.com  2) Enter your email  3) Copy the access key
+//        4) Replace YOUR_WEB3FORMS_ACCESS_KEY in the hidden input inside the form.
+const contactForm   = document.getElementById("contact-form");
+const contactSubmit = document.getElementById("contact-submit");
+const contactStatus = document.getElementById("contact-status");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Guard: warn user if access key is still the placeholder
+    const keyInput = contactForm.querySelector('[name="access_key"]');
+    if (!keyInput || keyInput.value === "YOUR_WEB3FORMS_ACCESS_KEY") {
+      contactStatus.textContent = "⚠️ Please set your Web3Forms access key first.";
+      contactStatus.className = "contact__status contact__status--error";
+      return;
+    }
+
+    // Loading state
+    contactSubmit.disabled = true;
+    contactSubmit.innerHTML = 'Sending… <i class="uil uil-spinner-alt button__icon contact__spinner"></i>';
+    contactStatus.textContent = "";
+    contactStatus.className = "contact__status";
+
+    try {
+      const data = new FormData(contactForm);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      const json = await response.json();
+
+      if (response.ok && json.success) {
+        contactStatus.textContent = "✅ Message sent! I'll get back to you soon.";
+        contactStatus.className = "contact__status contact__status--success";
+        contactForm.reset();
+      } else {
+        throw new Error(json.message || "Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      contactStatus.textContent = "❌ " + err.message;
+      contactStatus.className = "contact__status contact__status--error";
+    } finally {
+      contactSubmit.disabled = false;
+      contactSubmit.innerHTML = 'Send Message <i class="uil uil-message button__icon"></i>';
+    }
+  });
+}
